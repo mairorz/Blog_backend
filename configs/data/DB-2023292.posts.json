@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "681ed2b56d3d4ac661d3185c"
+  },
+  "title": "Laboratorio # 4 - Ejercicios de JavaScript",
+  "description": "Cumple los requerimientos de desarrollo y entrega del documento adjunto.",
+  "course": "TALLER III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-04-10T04:14:45.607Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T04:14:45.607Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed31f6d3d4ac661d3186e"
+  },
+  "title": "Proyecto Bimestral II",
+  "description": "Cumple los requerimientos de desarrollo y entrega del documento adjunto. Revisión de avance en proyecto bimestral, se solicita el avance mínimo de 35%.",
+  "course": "TALLER III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-04-10T04:16:31.213Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T04:16:31.213Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed3966d3d4ac661d31871"
+  },
+  "title": "Laboratorio # 5 - Blog de aprendizaje",
+  "description": "Cumple los requerimientos de desarrollo y entrega del documento adjunto.",
+  "course": "TALLER III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-04-10T04:18:30.578Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T04:18:30.578Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed3c36d3d4ac661d31874"
+  },
+  "title": "Laboratorio # 6",
+  "description": "Cumple los requerimientos de desarrollo y entrega del documento adjunto.",
+  "course": "TALLER III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-04-10T04:19:15.428Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T04:19:15.428Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed3ec6d3d4ac661d31877"
+  },
+  "title": "Evaluación Técnica Bimestral",
+  "description": "Cumple los requerimientos de desarrollo y entrega del documento adjunto.",
+  "course": "TALLER III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-04-10T04:19:56.903Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T04:19:56.903Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed4396d3d4ac661d3187a"
+  },
+  "title": "Actividad # 4 - Infografía beneficios React",
+  "description": "Cumple los requerimientos de entrega del documento adjunto.",
+  "course": "TECNOLOGÍA III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-02T04:21:13.189Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T04:21:13.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed47c6d3d4ac661d3187e"
+  },
+  "title": "Actividad # 5 - Propuesta de proyecto",
+  "description": "Cumple los requerimientos de entrega del documento adjunto.",
+  "course": "TECNOLOGÍA III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-02T04:22:20.593Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T04:22:20.593Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed49c6d3d4ac661d31881"
+  },
+  "title": "Actividad # 6 - Investigación APIs",
+  "description": "Cumple los requerimientos de entrega del documento adjunto.",
+  "course": "TECNOLOGÍA III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-02T04:22:52.207Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T04:22:52.207Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed4c86d3d4ac661d31889"
+  },
+  "title": "Actividad # 7 - Exposición propuesta de proyecto",
+  "description": "Cumple los requerimientos de entrega del documento adjunto.",
+  "course": "TECNOLOGÍA III",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-02T04:23:36.854Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T04:23:36.854Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed4f86d3d4ac661d3188c"
+  },
+  "title": "Exposición grupal # 1",
+  "description": "Cumple los requerimientos de entrega del documento adjunto.",
+  "course": "PRÁCTICA SUPERVISADA",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-10T04:24:24.775Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T04:24:24.775Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed5066d3d4ac661d3188e"
+  },
+  "title": "Laboratorio # 4 - Almacenadora",
+  "description": "Cumple los requerimientos de entrega del documento adjunto.",
+  "course": "PRÁCTICA SUPERVISADA",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-10T04:24:38.988Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T04:24:38.988Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681ed5186d3d4ac661d31890"
+  },
+  "title": "Evaluación Técnica Bimestral",
+  "description": "El examen bimestral de práctica supervisada se pondera con el 50% del examen bimestral de Tecnología y el 50% del proyecto bimestral de Taller.",
+  "course": "PRÁCTICA SUPERVISADA",
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-05-10T04:24:56.567Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T04:24:56.567Z"
+  }
+}]

@@ -10,7 +10,7 @@ export const addPostValidator = [
   body('description')
     .notEmpty().withMessage('La descripción es requerida'),
   body('course')
-    .isIn(['Curso1', 'Curso2', 'Curso3']).withMessage('Curso inválido'),
+    .isIn(['TALLER III', 'TECNOLOGÍA III', 'PRÁCTICA SUPERVISADA']).withMessage('Curso inválido'),
   validarCampos,
   handleErrors
 ]
@@ -18,7 +18,7 @@ export const addPostValidator = [
 export const getPostsValidator = [
   query('course')
     .optional()
-    .isIn(['Curso1', 'Curso2', 'Curso3']).withMessage('Curso inválido'),
+    .isIn(['TALLER III', 'TECNOLOGÍA III', 'PRÁCTICA SUPERVISADA']).withMessage('Curso inválido'),
   validarCampos,
   handleErrors
 ]
@@ -41,7 +41,7 @@ export const updatePostValidator = [
     .notEmpty().withMessage('La descripción no puede quedar vacía'),
   body('course')
     .optional()
-    .isIn(['Curso1', 'Curso2', 'Curso3']).withMessage('Curso inválido'),
+    .isIn(['TALLER III', 'TECNOLOGÍA III', 'PRÁCTICA SUPERVISADA']).withMessage('Curso inválido'),
   validarCampos,
   handleErrors
 ]

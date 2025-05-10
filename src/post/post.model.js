@@ -34,7 +34,7 @@ const postSchema = new Schema({
   },
   course: {
     type: String,
-    enum: ['Curso1', 'Curso2', 'Curso3'],
+    enum: ['TALLER III', 'TECNOLOGÍA III', 'PRÁCTICA SUPERVISADA'],
     required: [true, 'El curso es requerido']
   },
   comments: [commentSchema],

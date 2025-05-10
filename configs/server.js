@@ -7,6 +7,7 @@ import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
 import postRoutes from "../src/post/post.routes.js"
 import apiLimiter from "../src/middlewares/rate-limit-validator.js"
+import { swaggerDocs, swaggerUi } from "./swagger.js"
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended: false}))
@@ -33,6 +34,7 @@ const middlewares = (app) => {
 
 const routes = (app) =>{
     app.use("/blog/v1/post", postRoutes)
+    app.use("/blog/v1/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 
 const conectDB = async () =>{
