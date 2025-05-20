@@ -42,16 +42,20 @@ export const getPostById = async (req, res) => {
 export const createPost = async (req, res) => {
   try {
     const post = new Post(req.body);
+    let imageUrl = req.file ? req.file.filename : null;
+    post.imageUrl = imageUrl;
+
     await post.save();
-    res.status(201).json({ 
-        success: true, 
-        post 
+    res.status(201).json({
+      success: true,
+      post
     });
   } catch (err) {
-    res.status(400).json({ 
-        success: false, 
-        message: 'Error al crear publicación', 
-        error: err.message 
+    console.error('Error al crear publicación:', err.message);
+    res.status(400).json({
+      success: false,
+      message: 'Error al crear publicación',
+      error: err.message
     });
   }
 };

@@ -14,11 +14,10 @@ const commentSchema = new Schema({
     maxLength: [300, 'Máximo 300 caracteres']
   }
 }, 
-
 {
   timestamps: true,
   versionKey: false
-})
+});
 
 const postSchema = new Schema({
   title: {
@@ -37,12 +36,15 @@ const postSchema = new Schema({
     enum: ['TALLER III', 'TECNOLOGÍA III', 'PRÁCTICA SUPERVISADA'],
     required: [true, 'El curso es requerido']
   },
+  imageUrl: {
+    type: String,
+    required: [true, 'La imagen es requerida']
+  },
   comments: [commentSchema],
 }, 
-
 {
   timestamps: true,
   versionKey: false
-})
+});
 
 export default model('Post', postSchema);

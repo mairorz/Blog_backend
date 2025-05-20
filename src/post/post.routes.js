@@ -19,6 +19,8 @@ import {
   getCommentsValidator
 } from '../middlewares/post-validators.js';
 
+import { uploadPostImage } from '../middlewares/multer-upload.js';
+
 const router = Router();
 
 /**
@@ -101,9 +103,28 @@ router.get('/getPost/:id', idParamValidator, getPostById);
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
- *             $ref: '#/components/schemas/PostInput'
+ *             type: object
+ *             properties:
+ *               title:
+ *                 type: string
+ *                 description: Título de la publicación
+ *                 example: "Mi primera publicación"
+ *               description:
+ *                 type: string
+ *                 description: Descripción de la publicación
+ *                 example: "Este es el contenido de la publicación"
+ *               course:
+ *                 type: string
+ *                 enum: [TALLER III, TECNOLOGÍA III, PRÁCTICA SUPERVISADA]
+ *                 description: Curso relacionado con la publicación
+ *                 example: "TALLER III"
+ *               image:
+ *                 type: string
+ *                 format: binary
+ *                 description: Imagen para la publicación
+ *                 example: "image.jpg"
  *     responses:
  *       201:
  *         description: Publicación creada exitosamente
@@ -114,12 +135,16 @@ router.get('/getPost/:id', idParamValidator, getPostById);
  *               properties:
  *                 success:
  *                   type: boolean
+ *                   description: Indica si la creación fue exitosa
+ *                   example: true
  *                 post:
  *                   $ref: '#/components/schemas/Post'
  *       400:
  *         description: Error al crear la publicación
+ *       500:
+ *         description: Error interno del servidor al procesar la solicitud
  */
-router.post('/createPost', addPostValidator, createPost);
+router.post('/createPost', uploadPostImage.single('imageUrl'), addPostValidator, createPost);
 
 /**
  * @swagger
