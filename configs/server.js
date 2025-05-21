@@ -4,6 +4,7 @@ import express from "express"
 import cors from "cors"
 import helmet from "helmet"
 import morgan from "morgan"
+import path from 'path'
 import { dbConnection } from "./mongo.js"
 import postRoutes from "../src/post/post.routes.js"
 import apiLimiter from "../src/middlewares/rate-limit-validator.js"
@@ -18,12 +19,13 @@ const middlewares = (app) => {
         allowedHeaders: ["Content-Type", "Authorization"] 
     }))
     app.use(helmet({
+        crossOriginResourcePolicy: { policy: "cross-origin" },
         contentSecurityPolicy: {
             directives: {
                 defaultSrc: ["'self'"],
                 scriptSrc: ["'self'", "'unsafe-inline'", `http://localhost:${process.env.PORT}`],
                 connectSrc: ["'self'", `http://localhost:${process.env.PORT}`],
-                imgSrc: ["'self'", "data:"],
+                imgSrc: ["'self'", "data:", `http://localhost:${process.env.PORT}`, "http://localhost:5173"],
                 styleSrc: ["'self'", "'unsafe-inline'"]
             },
         },
@@ -52,6 +54,7 @@ export const initServer = () => {
         middlewares(app)
         conectDB()
         routes(app)
+        app.use('/images/posts-pictures', express.static(path.join(process.cwd(), 'public', 'uploads', 'posts-pictures')));
         app.listen(process.env.PORT)
         console.log(`Server running on port ${process.env.PORT}`)
     }catch(err){
