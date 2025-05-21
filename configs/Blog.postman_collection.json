@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "4da14925-de55-4b4e-abd7-b6efee06c726",
+		"_postman_id": "16f21e53-23f0-4428-ad36-cbce0a584449",
 		"name": "Blog",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "41830113"
+		"_exporter_id": "37585759"
 	},
 	"item": [
 		{
@@ -15,13 +15,29 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"title\":      \"Evaluación Técnica Bimestral\",\n    \"description\": \"El examen bimestral de práctica supervisada se pondera con el 50% del examen bimestral de Tecnología y el 50% del proyecto bimestral de Taller.\",\n    \"course\":     \"PRÁCTICA SUPERVISADA\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Evaluación Técnica Bimestral",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Cumple los requerimientos de desarrollo y entrega del documento adjunto.",
+									"type": "text"
+								},
+								{
+									"key": "course",
+									"value": "TALLER III",
+									"type": "text"
+								},
+								{
+									"key": "imageUrl",
+									"type": "file",
+									"src": "/C:/Users/Informatica/Downloads/taller3.jpg"
 								}
-							}
+							]
 						},
 						"url": "http://localhost:3000/blog/v1/post/createPost"
 					},
